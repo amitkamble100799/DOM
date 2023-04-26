@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Handson</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h3>Q1. Write the code to access element which is having id as "text".</h3>
+    <p>Ans: </p>
+    <p id="text">
+        let text = document.getElementById('text')
+    </p><br>
+    <h1>Q2. Write the code to access element which is having tag as "h1".</h1>
+    <p>Ans: let h1 = document.getElementsByTagName('h1');</p>
+    <br>
+    <h3>Q3. Write the code to access element which is having class as "box".</h3>
+    <p>Ans:</p> 
+    <p class="box">
+        let box = document.getElementsByClassName('box');
+    </p>
+    <br>
+    <h3>Q4. Change the heading from "Hello" to "Hello World" using DOM function.</h3>
+    <p>Ans: <span  id="hello">Hello</span></p>
+    <pre>let hello = document.getElementById('hello');
+        hello.addEventListener('click', helloworld)
+        function helloworld()
+        {
+            hello.innerText = 'Hello World';
+            hello.style.fontSize= '20px';
+        }</pre>
+    <br>
+    <h3>Q5. Create a HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy".</h3>
+    <p>Ans: </p>
+    <h2 id="text1">Hello World</h2>
+    <button onclick="prep()" id="bt">Replace Text</button>
+
+    <pre>function prepBytes()
+        {
+        text1.innerText = ' "Welcome to Elevation academy" '
+        }
+    
+    </pre>
+    <br>
+
+    <h3>Q6. Add one style attribute and give text color as red and id attribute and give the id attribute as "heading" in the above h1 tag using DOM functions.</h3>
+    <p>Ans:</p>
+    <h1 id="heading">Hello</h1>
+    <pre>
+        let heading = document.getElementById('heading')
+        heading.addEventListener('click', head1)
+            function head1(){
+                heading.style.color='red';
+                heading.style.fontSize='50px';
+        }
+
+    </pre>
+
+    <h3>Q7. Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction. and card also change their direction whenever the user click on the card (they toggle).</h3>
+    <p>Ans:</p>
+    <div class="card">
+        <div class="card1"></div>
+        <div class="card1"></div>
+        <div class="card1"></div>
+    </div>
+    <br>
+    <button  onclick="change()">Change Flex direction</button>
+
+    <h3>Q8. What's the difference between window vs document?</h3>
+    <p>Ans:</p>
+    <h4>Document: </h4>
+    <p>1. It represents the document loaded inside the window or browser.</p>  
+    <p>2. The properties related to it are stored in the document object</p>
+    <p>3. Example: document.title will return the title of the document</p>
+    <pre>logically:
+
+        document:{ properties}
+        </pre>
+
+    <h4>Window: </h4>
+    <p>1. It represents the browser window in which you are seeing the content.</p>  
+    <p>2. The properties related to it are stored in the window object.</p>
+    <p>3. Example: window.document.title will return the title of the document.</p>
+    <pre>logically:
+        window:{
+            document:{properties}
+        }
+    
+        </pre>
+    <br>
+    <h3>Q9. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second.</h3>
+        <div class="container">
+        <span id="time" class="inp">TIME</span>
+            <span id="hours" class="inp">00</span>
+            <span>:</span>
+            <span id="minutes" class="inp">00</span>
+            <span>:</span>
+            <span id="seconds" class="inp">00</span>
+            <span id="sessions" class="inp"></span>
+        </div>
+
+        <br>
+        <br>
+
+        <h3>Q10.</h3>
+        <div>
+            <h2>Game:</h2>
+            <a href="./index2.html"> for Game click here..</a>
+        </div>
+
+   <script src="./index.js"></script>
+</body>
+</html>

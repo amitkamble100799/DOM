@@ -1,0 +1,37 @@
+body{
+   margin: 0%;
+}
+pre
+{
+    color: blue;
+
+}
+.card
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card1
+{
+    margin: 10px;
+    height: 120px;
+    width: 100px;
+    background-color:brown;
+}
+.container
+{
+    background-color: rgb(100, 74, 171);
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+.inp
+{
+    background-color: rgb(204, 188, 220);
+    
+}
